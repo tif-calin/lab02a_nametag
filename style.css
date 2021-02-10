@@ -1,0 +1,55 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: floralwhite;
+}
+
+header {
+    color: sienna;
+}
+
+h2, h3, h4, ol {
+    margin-bottom: -0.5em;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+.nametag {
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    border-radius: 15%;
+    text-align: center;
+    color: white;
+}
+
+.nametag h1 {
+    height: 10px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-size: 55px;
+}
+
+.nametag h2 {
+    height: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.nametag p.name {
+    background-color: white;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Brush Script MT", cursive;
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.nametag p.name span {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    font-size: 20px;
+}
