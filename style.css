@@ -7,13 +7,9 @@ header {
     color: sienna;
 }
 
-h2, h3, h4, ol {
-    margin-bottom: -0.5em;
-}
-
-h4 {
-    font-weight: 500;
-}
+/*
+NAMETAG OUTPUT
+*/
 
 .nametag {
     background-color: red;
@@ -35,6 +31,7 @@ h4 {
     height: 10px;
     padding-top: 20px;
     font-size: 15px;
+    padding-top: 5px;
     margin-top: 5px;
 }
 
@@ -52,4 +49,13 @@ h4 {
 .nametag p.name span {
     font-family: "Segoe UI", Tahoma, sans-serif;
     font-size: 20px;
+}
+
+/*
+NAMETAG INPUT
+*/
+
+section.nametag-input {
+    background-color: aliceblue;
+    width: 300px;
 }
