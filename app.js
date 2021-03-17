@@ -1,33 +1,26 @@
-const inName = document.getElementById('name-input');
-const inColor = document.getElementById('color-input');
-const inSize = document.getElementById('size-input');
+const inName = document.getElementById('input-name');
+const inPronouns = document.getElementById('input-pronouns');
+const inColor = document.getElementById('input-color');
 
-const outName = document.getElementsByClassName('name')[0];
+const outName = document.getElementById('output-name');
+const outPronouns = document.getElementById('output-pronouns');
 const outTag = document.getElementsByClassName('nametag')[0];
 
-const goButton = document.getElementById('go-button');
+const btnGo = document.getElementById('button-go');
 
-const buttonClick = () => {
-    // Set name
+const btn_click = () => {
+    //set name
     outName.innerText = (inName.value === "") ? "Name" : inName.value;
 
-    // Set color
+    //set pronouns
+    outPronouns.innerText = (inPronouns.value === "") ? "Name" : inPronouns.value;
+
+    //set color
     outTag.style.backgroundColor = inColor.value;
 
-    // Set font size
-    switch(inSize.value) {
-        case "small":
-            outName.style.fontSize = "25px";
-            break;
-        case "big":
-            outName.style.fontSize = "45px";
-            break;
-        default:
-            outName.style.fontSize = "35px";
-            break;
-    }
-
+    //reset inner text of inputs
     inName.value = '';
-}
+    inPronouns.value = '';
+};
 
-goButton.addEventListener('click', buttonClick);
+btnGo.addEventListener('click', btn_click);

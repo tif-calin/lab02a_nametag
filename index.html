@@ -4,54 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nametag Generator</title>
+    <title>Nametag (very cool)</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
 </head>
 <body>
     <header>Nametag generator</header>
 
     <main>
-        <section class='nametag-output'>
-            <div class="nametag">
-                <h1>Hello</h1>
-                <h2>My name is</h2>
-                <p class="name">Culi <span>(he/they)</span></p>
+        <section class="nametag">
+            <h1 class="greeting">Hello</h1>
+            <h3 class="intro">my name is</h3>
+            <div class="identity">
+                <h2 class="name" id="output-name">Pierre Bourdieu</h2>
+                <h3 class="pronouns" id="output-pronouns">he/they</h3>
             </div>
         </section>
-        <br/>
-        <section class='nametag-input'>
-            <label>
-                Enter your name:
-                <input id='name-input'>
-            </label>
-            <br>
-            <details>
-                <summary>advanced settings</summary>
-                <label>
-                    Nametag color:
-                    <select id='color-input'>
-                        <option>red</option>
-                        <option>pink</option>
-                        <option>lightgreen</option>
-                        <option>lightblue</option>
-                    </select>
-                </label>
-                <br>
-                <label>
-                    Name size:
-                    <select id='size-input'>
-                        <option>big</option>
-                        <option>medium</option>
-                        <option>small</option>
-                    </select>
-                </label>
-            </details>
-            <br>
-            <button id='go-button'>Go!</button>
-            <script type="module" src="app.js"></script>
+
+        <section class="input">
+            <label>Name</label>
+            <input id='input-name'>
+            <label>Pronouns</label>
+            <input id='input-pronouns'>
+            <button id='button-go'>Go!</button>
         </section>
+
+        <details class="advanced">
+            <summary>advanced</summary>
+            <div>
+                <label>Color</label>
+                <select id='input-color'>
+                    <option>blue</option>
+                    <option>chartreuse</option>
+                    <option>crimson</option>
+                    <option>gold</option>
+                    <option>magenta</option>
+                    <option>navy</option>
+                    <option>red</option>
+                    <option>teal</option>
+                </select>
+            </div>  
+        </details>
     </main>
 
-    <!--<footer>&#x1F12F; copyleft</footer>-->
+    <footer></footer>
 </body>
 </html>

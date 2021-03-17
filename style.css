@@ -1,61 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: floralwhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-header {
-    color: sienna;
+main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-/*
-NAMETAG OUTPUT
-*/
 
 .nametag {
+    margin-top: 2rem;
     background-color: red;
-    width: 300px;
+    color: white;
+    width: 400px;
     height: 200px;
     border-radius: 15%;
-    text-align: center;
-    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.nametag h1 {
-    height: 10px;
-    padding-top: 5px;
+.nametag * {
+    margin: 0em;
+    justify-self: center;
+}
+
+.nametag .greeting {
     text-transform: uppercase;
-    font-size: 55px;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 1rem;
 }
 
-.nametag h2 {
-    height: 10px;
-    padding-top: 20px;
-    font-size: 15px;
-    padding-top: 5px;
-    margin-top: 5px;
+.nametag .intro {
+    font-size: 1rem;
 }
 
-.nametag p.name {
+.nametag .identity {
+    width: 100%;
+    height: 37.5%;
+    margin-top: 0.5rem;
     background-color: white;
     color: black;
-    font-size: 35px;
-    font-weight: bold;
-    font-family: "Brush Script MT", cursive;
-    position: relative;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nametag .identity .name {
+    font-style: italic;
+    font-family: "Architects Daughter", cursive;
+    font-size: 2rem;
+}
+
+.nametag .identity .pronouns {
+    margin: 0em;
+    font-weight: lighter;
+}
+
+.pronouns::before {
+    content: '(';
+}
+.pronouns::after {
+    content: ')';
+}
+
+.input {
+    margin-top: 2rem;
+    background-color: lightsteelblue;
+    width: 360px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 2fr;
+    gap: 5px;
     padding: 20px;
+    align-items: start;
 }
 
-.nametag p.name span {
-    font-family: "Segoe UI", Tahoma, sans-serif;
-    font-size: 20px;
+.input label {
+    align-self: center;
+    justify-self: end;
+}
+.input label::after {
+    content: ':';
 }
 
-/*
-NAMETAG INPUT
-*/
+.input input {
+    width: 10rem;
+    align-self: center;
+    justify-self: start;
+}
 
-section.nametag-input {
-    background-color: aliceblue;
+#main-button {
+    grid-column: 1 / span 2;
+    align-self: end;
+    justify-self: center;
+}
+
+.advanced {
     width: 300px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.advanced div {
+    width: 300px;
+    height: 3rem;
+    padding: 20px;
+    padding-top: 0px;
 }
