@@ -13,7 +13,7 @@ const btn_click = () => {
     outName.innerText = (inName.value === "") ? "Name" : inName.value;
 
     //set pronouns
-    outPronouns.innerText = (inPronouns.value === "") ? "Name" : inPronouns.value;
+    outPronouns.innerText = (inPronouns.value === "") ? "any/all" : inPronouns.value;
 
     //set color
     outTag.style.backgroundColor = inColor.value;
