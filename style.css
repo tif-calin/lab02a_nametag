@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 body {
     background-color: floralwhite;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -13,6 +19,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
 
 .nametag {
@@ -20,8 +27,9 @@ main {
     background-color: red;
     color: white;
     width: 400px;
-    height: 200px;
-    border-radius: 15%;
+    height: 225px;
+    border-radius: 10%;
+    box-shadow: 1rem 1rem 1rem gray;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -88,7 +96,7 @@ main {
     align-self: center;
     justify-self: end;
 }
-.input label::after {
+label::after {
     content: ':';
 }
 
@@ -105,7 +113,9 @@ main {
 }
 
 .advanced {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
     margin-top: 1rem;
     cursor: pointer;
 }
@@ -113,6 +123,13 @@ main {
 .advanced div {
     width: 300px;
     height: 3rem;
-    padding: 20px;
-    padding-top: 0px;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    margin-top: 5rem;
 }
